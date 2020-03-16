@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88bd548d-37c0-494e-a29b-e8150e5aeb3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/biblioteka_api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka_api/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exlibris/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exlibris/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exlibris/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/exlibris/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exlibris/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/exlibris/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exlibris/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exlibris/views.py" afterDir="false" />
@@ -57,6 +58,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\bruce\PycharmProjects\biblioteka_api\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1Z5tV7VutLKFaTpoWhAlEdrvS8E" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -67,6 +75,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/exlibris" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -120,6 +129,7 @@
       <workItem from="1584140807338" duration="3554000" />
       <workItem from="1584217714077" duration="1326000" />
       <workItem from="1584219333819" duration="8967000" />
+      <workItem from="1584303052256" duration="4216000" />
     </task>
     <servers />
   </component>
@@ -171,10 +181,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1584230665075" />
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1584219335395">
+    <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1584303055906">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584219335395" />
+    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584303055906" />
     <state x="203" y="77" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1584227938302">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -183,16 +193,5 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1584142346947" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/exlibris/views.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

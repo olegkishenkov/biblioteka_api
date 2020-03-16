@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class Author(models.Model):
@@ -8,11 +9,13 @@ class Author(models.Model):
     def __str__(self):
         return self.name
 
+
 class Biography(models.Model):
     date_born = models.DateField("date_born")
     place_born = models.CharField(max_length=255)
     education = models.CharField(max_length=255)
     author = models.OneToOneField(to=Author, related_name='biography', on_delete=models.CASCADE)
+
 
 class Book(models.Model):
     title = models.CharField(max_length=255)
@@ -22,12 +25,14 @@ class Book(models.Model):
     def __str__(self):
         return self.title
 
+
 class Reader(models.Model):
     name = models.CharField(max_length=255)
     books = models.ManyToManyField(Book, through='Lend')
 
     def __str__(self):
         return self.name
+
 
 class Lend(models.Model):
     book = models.ForeignKey(Book, related_name="lends", on_delete=models.CASCADE)
@@ -37,6 +42,3 @@ class Lend(models.Model):
 
     def __str__(self):
         return (str(self.book) + " -> " + str(self.reader))
-
-
-
