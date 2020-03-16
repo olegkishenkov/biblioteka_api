@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88bd548d-37c0-494e-a29b-e8150e5aeb3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exlibris/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exlibris/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exlibris/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/exlibris/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exlibris/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/exlibris/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exlibris/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exlibris/views.py" afterDir="false" />
@@ -129,7 +127,7 @@
       <workItem from="1584140807338" duration="3554000" />
       <workItem from="1584217714077" duration="1326000" />
       <workItem from="1584219333819" duration="8967000" />
-      <workItem from="1584303052256" duration="4216000" />
+      <workItem from="1584303052256" duration="5918000" />
     </task>
     <servers />
   </component>
