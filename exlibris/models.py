@@ -16,6 +16,9 @@ class Biography(models.Model):
     education = models.CharField(max_length=255)
     author = models.OneToOneField(to=Author, related_name='biography', on_delete=models.CASCADE)
 
+    def __str__(self):
+        return 'biography of {}'.format(self.author.name)
+
 
 class Book(models.Model):
     title = models.CharField(max_length=255)

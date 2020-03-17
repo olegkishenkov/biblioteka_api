@@ -13,7 +13,6 @@ class AuthorViewSet(viewsets.ModelViewSet):
     serializer_class = AuthorSerializer
     permission_classes = [permissions.AllowAny]
 
-
 class BiographyViewSet(viewsets.ModelViewSet):
     queryset = Biography.objects.all().order_by('author__name')
     serializer_class = BiographySerializer
@@ -34,3 +33,4 @@ class LendViewSet(viewsets.ModelViewSet):
     queryset = Lend.objects.all().order_by('date_start')
     serializer_class = LendSerializer
     permission_classes = [permissions.AllowAny]
+
