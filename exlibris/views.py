@@ -5,7 +5,7 @@ from rest_framework import viewsets
 from rest_framework import permissions
 from .models import Author, Biography, Book, Reader, Lend
 from .serializers import AuthorSerializer, BiographySerializer, BookSerializer, ReaderSerializer, LendSerializer
-
+import requests
 
 # Create your views here.
 class AuthorViewSet(viewsets.ModelViewSet):
@@ -33,4 +33,10 @@ class LendViewSet(viewsets.ModelViewSet):
     queryset = Lend.objects.all().order_by('date_start')
     serializer_class = LendSerializer
     permission_classes = [permissions.AllowAny]
+
+def author_list(request):
+    if request.method == "GET":
+        authors = Author.objects.all()
+        serializer = AuthorSerializer(authors, many=True)
+        return JsonResponse(serializer.data, safe=False)
 

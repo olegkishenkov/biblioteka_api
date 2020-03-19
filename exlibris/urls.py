@@ -11,5 +11,6 @@ router.register(r'lends', views.LendViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('authors_functions', views.author_list, name='authors_functions'),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

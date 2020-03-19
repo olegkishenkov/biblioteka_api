@@ -1,6 +1,7 @@
 from django.test import TestCase
+from unittest.mock import patch
 from django.urls import reverse, get_resolver
-from .models import Author
+from .models import Author, Biography
 
 # Create your tests here.
 
@@ -17,8 +18,16 @@ finally:
 
 
 class TestExlibrisViews(TestCase):
-    def test_author_list_get(self):
+    @patch('exlibris.views.AuthorViewSet')
+    def test_author_list_get(self, mocked_authorViewSet):
+        mocked_authorViewSet.return_value = 20000000000
         response = self.client.get(reverse('author-list'))
+        self.assertEqual(response.status_code, 200)
+
+    @patch('exlibris.views.requests.get')
+    def test_author_list_get(self, mocked_get):
+        mocked_get.return_value = 20000000000
+        response = self.client.get(reverse('authors_functions'))
         self.assertEqual(response.status_code, 200)
 
     def test_author_list_post__form_invalid(self):

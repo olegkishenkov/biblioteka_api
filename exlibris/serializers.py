@@ -38,4 +38,8 @@ class LendSerializer(serializers.HyperlinkedModelSerializer):
         model = Lend
         fields = ['book', 'reader', 'date_start', 'date_end', ]
 
+class AuthorFunctionSerializer(serializers.Serializer):
+    name = serializers.CharField(max_length=255)
+
+
 
