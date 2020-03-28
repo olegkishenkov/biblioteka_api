@@ -1,3 +1,4 @@
+import requests
 from rest_framework import serializers
 from .models import Author, Biography, Book, Reader, Lend
 
@@ -6,6 +7,10 @@ class AuthorSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Author
         fields = ['name']
+
+    def get_fields(self):
+        return_value = super().get_fields()
+        return return_value
 
 class BiographySerializer(serializers.ModelSerializer):
     class Meta:

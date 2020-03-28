@@ -1,3 +1,4 @@
+import requests
 from django.db import models
 
 
@@ -5,6 +6,12 @@ from django.db import models
 
 class Author(models.Model):
     name = models.CharField(max_length=255)
+
+    def _get_bar(self):
+        return_value = requests.get('http://google.com', {'q': 'some search query'}).text
+        return return_value
+
+    bar = property(_get_bar)
 
     def __str__(self):
         return self.name
