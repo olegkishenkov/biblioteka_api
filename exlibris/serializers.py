@@ -6,7 +6,7 @@ from .models import Author, Biography, Book, Reader, Lend
 class AuthorSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Author
-        fields = ['name']
+        fields = ['name', 'photo']
 
     def get_fields(self):
         return_value = super().get_fields()

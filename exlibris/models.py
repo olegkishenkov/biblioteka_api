@@ -1,11 +1,25 @@
+import os
+
 import requests
 from django.db import models
 
 
 # Create your models here.
 
+def path_and_rename(path):
+    def inner(instance, filename):
+        ext = filename.split('.')[-1]
+        if instance.pk:
+            filename = '{}.{}'.format(instance.pk, ext)
+        else:
+            from uuid import uuid4
+            filename = '{}.{}'.format(uuid4().hex, ext)
+        return os.path.join(path, filename)
+    return inner
+
 class Author(models.Model):
     name = models.CharField(max_length=255)
+    photo = models.ImageField(upload_to=path_and_rename('authors'), null=True, blank=True)
 
     def _get_bar(self):
         return_value = requests.get('http://google.com', {'q': 'some search query'}).text
